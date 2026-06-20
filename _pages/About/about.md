@@ -4,7 +4,7 @@ author: Graham Ambrose
 date: 2026-06-20
 category: Jekyll
 layout: post
-cover: .About\cropped-aspa-scns-1.png
+cover: ./cropped-aspa-scns-1.png
 ---
 
 # Section on Complexity and Network Studies
