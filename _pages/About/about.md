@@ -13,5 +13,6 @@ Within the broad aims and purposes of the American Society of Public Administrat
 
 ## Links
 
-- 🌐  **[Our Website](https://scnsaspa.wordpress.com/)**
-- 🌐  **[ASPA's Website](https://www.aspanet.org/ASPA/ASPA/Chapters-Sections/Section-Information-Pages/SCNS.aspx)**
+🌐  **Our Website:** [https://scnsaspa.wordpress.com/](https://scnsaspa.wordpress.com/)
+
+🌐  **ASPA's Website:** [https://www.aspanet.org/ASPA/ASPA/Chapters-Sections/Section-Information-Pages/SCNS.aspx](https://www.aspanet.org/ASPA/ASPA/Chapters-Sections/Section-Information-Pages/SCNS.aspx)**
