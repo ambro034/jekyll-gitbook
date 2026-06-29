@@ -8,7 +8,7 @@ layout: post
 
 <!-- Summary Counts of total Contributions -->
 
-{% assign target_string = "#####" %}
+{% assign target_string = ">#####" %}
 {% assign total_count = 0 %}
 
 {% comment %} Loop through all blog posts {% endcomment %}
