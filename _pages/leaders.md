@@ -55,12 +55,6 @@ layout: post
 
 ### Test
 
----
-layout: page
-title: "Comment Name Counter"
-permalink: /comment-counter/
----
-
 {% comment %} 
   Set the name you want to search for here. 
   It is case-sensitive, so we will use filters to make it robust.
