@@ -55,4 +55,40 @@ layout: post
 
 ### Test
 
+---
+layout: page
+title: "Comment Content Counter"
+---
 
+{% assign total_words = 0 %}
+{% assign comment_count = 0 %}
+
+{%- comment -%} Loop through both posts and pages {%- endcomment -%}
+{% assign all_content = site.posts | concat: site.pages %}
+
+{% for item in all_content %}
+  {% if item.content contains '<!--' %}
+    {%- comment -%} Split the content by the opening comment tag {%- endcomment -%}
+    {% assign parts = item.content | split: '<!--' %}
+    
+    {% for part in parts %}
+      {%- comment -%} Skip the first part because it is before the first comment {%- endcomment -%}
+      {% if forloop.first %}{% continue %}{% endif %}
+      
+      {%- comment -%} Isolate the text inside the comment {%- endcomment -%}
+      {% assign comment_pieces = part | split: '-->' %}
+      {% assign comment_text = comment_pieces[0] | strip %}
+      
+      {%- comment -%} Count words and increment totals {%- endcomment -%}
+      {% assign words = comment_text | number_of_words %}
+      {% assign total_words = total_words | plus: words %}
+      {% assign comment_count = comment_count | plus: 1 %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+<h2>Site-Wide Comment Statistics</h2>
+<ul>
+  <li><strong>Total Comments Found:</strong> {{ comment_count }}</li>
+  <li><strong>Total Words Inside Comments:</strong> {{ total_words }}</li>
+</ul>
