@@ -84,7 +84,7 @@ layout: post
       {% assign extracted = post.content | split: '<div style="text-align: right"><i> submitted by ' %}
       {% for item in extracted %}
         {% if forloop.index0 > 0 %}
-          {% assign content_piece = item | split: '</i></div>' | first | strip %}
+          {% assign content_piece = item | split: '</i></div>' | first %}
         
           {% assign count = content_piece | last | size %}
           <a href="#{{ content_piece | slugify }}" style="margin-right: 15px;">
