@@ -76,25 +76,25 @@ layout: post
 
 ### Test 2
 
-<!-- Summary Counts at the Top -->
-<div class="tag-cloud">
-  <div class="extracted-content">
-    {% assign gathered_content = "" | split: "" %}
+<div class="extracted-content">
+  {% assign gathered_content = "" | split: "" %}
   
-    {% for post in site.posts %}
-      {% assign extracted = post.content | split: '<div style="text-align: right"><i> submitted by ' %}
-      {% for item in extracted %}
-        {% if forloop.index0 > 0 %}
-          {% assign content_piece = item | split: '</i></div>' | first | strip %}
-          {% assign name = content_piece | first %}
-          {% assign count = content_piece | last | size %}
-          <a href="#{{ name | slugify }}" style="margin-right: 15px;">
-            {{ name }} ({{ count }})
-          </a>
-  </div>      
-</div>
+  {% for post in site.posts %}
+    {% assign extracted = post.content | split: '<div style="text-align: right"><i> submitted by ' %}
+    {% for item in extracted %}
+      {% if forloop.index0 > 0 %}
+        {% assign content_piece = item | split: '</i></div>' | first | strip %}
+        
+        {% assign name = content_piece | first %}
+        {% assign count = content_piece | last | size %}
+        <a href="#{{ name | slugify }}" style="margin-right: 15px;">
+          {{ name }} ({{ count }})
+        </a>
 
-<hr>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</div>
 
 ### Test 3
 
