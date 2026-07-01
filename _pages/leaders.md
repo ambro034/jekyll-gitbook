@@ -31,7 +31,7 @@ layout: post
     
       <li>
         <!-- <a style="margin-right: 15px;">  href="#{{ name | slugify }}" -->
-        {{ name }} ({{ count }})
+        <strong>{{ name }}</strong> ({{ count }})
         <!--</a>-->
       </li>
       
