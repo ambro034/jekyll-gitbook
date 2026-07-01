@@ -22,17 +22,19 @@ layout: post
 ## Contributors by numbers of contributions:
 
 <!-- Summary Counts at the Top -->
-<!-- 
+
 <div class="tag-cloud"> 
   {% for tag in site.tags %}
     {% assign name = tag | first %}
     {% assign count = tag | last | size %}
-    <a style="margin-right: 15px;">  <!-- href="#{{ name | slugify }}"
+    <li>
+    <!-- <a style="margin-right: 15px;">  href="#{{ name | slugify }}" -->
       {{ name }} ({{ count }})
-    </a>
+    <!--</a>-->
+    </li>
   {% endfor %}
 </div>
- -->
+
 <hr>
 
 <h2>All Tags</h2>
