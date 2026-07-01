@@ -10,7 +10,7 @@ tag:
 > 
 > ##### Add a Resource Here!
 >
->🌐  **Link:** [https://ambro034.github.io/Big_Book_of_Complex_Governance/](Stand-in Link to Home Page)  
+>🌐  **Link:** [Stand-in Link to Home Page](https://ambro034.github.io/Big_Book_of_Complex_Governance/)  
 >
 ><i>Authors</i>
 >
