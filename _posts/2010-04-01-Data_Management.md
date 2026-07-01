@@ -1,5 +1,5 @@
 ---
-title: Data Cleaning and Management
+title: 3. Data Cleaning and Management
 author: Graham Ambrose
 date: 2026-06-20
 category: Jekyll
