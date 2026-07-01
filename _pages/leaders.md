@@ -57,7 +57,7 @@ layout: post
       {% assign name = parts[1] | replace: '-', ' ' %}
 
       <li>
-        <a href="/tag/{{ name | slugify }}/">
+        <a>
           {{ name }}
         </a>
         ({{ count }})
